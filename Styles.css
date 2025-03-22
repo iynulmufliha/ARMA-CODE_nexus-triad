@@ -1,0 +1,17 @@
+@keyframes slideUp {
+    0% {
+      transform: translateY(20px); /* Start from 20px below */
+      opacity: 0; /* Start fully transparent */
+    }
+    100% {
+      transform: translateY(0); /* End at its original position */
+      opacity: 1; /* End fully opaque */
+    }
+  }
+  
+  .paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    text-align: left; /* Ensure left alignment */
+    animation: slideUp 0.5s ease-out; /* Slide up animation */
+  }

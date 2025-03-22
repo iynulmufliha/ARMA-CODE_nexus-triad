@@ -1,0 +1,272 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6); /* Subtle color */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-link:hover {
+  color: #ffcc00; /* Gold color on hover */
+}
+body {
+  background-color: #ffffff; /* Dark background for better contrast */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card-animation {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+      padding: 2rem; /* Increased padding on smaller screens */
+  }
+}body {
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Adjust base font size as necessary */
+}
+
+.navbar .nav-link {
+  font-size: 1.25rem; /* Increase navbar font size */
+}
+
+.card-body {
+  font-size: 1.1rem; /* Increase font size inside the card */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Title inside the card */
+}
+
+.card-text {
+  font-size: 1rem; /* Text inside the card, adjust as necessary */
+}
+
+/* Additional styling for buttons */
+.btn {
+  font-size: 1.1rem; /* Increase button font size */
+}
+
+/* For modal title and body */
+.modal-title {
+  font-size: 1.5rem; /* Increase modal title size */
+}
+
+.modal-body {
+  font-size: 1.1rem; /* Modal body text size */
+}
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: black;
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f4a261 !important;
+}
+
+/* Event Container */
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Event Card */
+.event-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.event-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.event-card .btn {
+  margin-top: 10px;
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.event-card .btn:hover {
+  background-color: #e76f51;
+}
+
+/* Event Details Page */
+.event-details-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-details-container h1 {
+  color: #222;
+  text-align: center;
+  font-size: 28px;
+}
+
+.event-details-container p {
+  font-size: 16px;
+  text-align: center;
+  color: #444;
+}
+
+.event-details-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-details-container ul li {
+  background: #f4a261;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background: #f4a261;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #e76f51;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .event-card {
+      width: 90%;
+  }
+}

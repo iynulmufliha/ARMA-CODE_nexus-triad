@@ -1,0 +1,33 @@
+@keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes scroll-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  .slider {
+    display: flex;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .slider:not(.reverse) {
+    animation-name: scroll-left;
+  }
+  
+  .slider.reverse {
+    animation-name: scroll-right;
+  }
+  

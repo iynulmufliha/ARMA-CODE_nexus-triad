@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://i.pinimg.com/736x/25/0d/44/250d441e15e88e5fe859cf2b02f58f64.jpg"); /* Ensure a valid background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .destination-container {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .destination-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .collage img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .text-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .text-content h2 {
+    margin-bottom: 10px;
+  }
+  .custom-button {
+    padding: 0.4rem 0.8rem; /* Adjust padding for the button */
+    font-size: 0.875rem; /* Smaller font size */
+   
+    width: 50%; /* Set width to 50% or adjust as needed */
+}
+.homepage-background {
+  background-color: #007cf8;
+  background-size: cover;
+  overflow-x: hidden; /* To avoid overflow */
+}

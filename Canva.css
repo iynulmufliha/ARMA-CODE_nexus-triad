@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/736x/67/06/a8/6706a8530e6a7ee382886eec45a53e78.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+}
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
